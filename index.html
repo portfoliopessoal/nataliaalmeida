@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal (CV online)</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: wheat;/*uma cor agradavel visualmente e nao muito forte*/
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .meninacomputador2 {
+            grid: column start 1;
+            grid-column-end: 3;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            /*imagem para dar uma estetica melhor ao site*/
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: justify;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;/*fonte da familia arial para facilitar a leitura*/
+            }
+
+        footer {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            background-color: wheat;
+            color: black;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 10px;
+        }
+
+       .card {
+        display: flex;
+        flex-flow: nowrap;
+       }
+
+        ul {
+            list-style-type: none;
+            color: black;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid rgb(250, 248, 231);/*bordas nos links para facilitar o acesso ao conteudo*/
+            color: black;
+            font-size: 18px;
+        }
+
+        li{
+            float: left;
+        }
+
+        a:hover {
+            background-color: wheat; 
+            color: black;
+         }
+
+        .meninacomputador2 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .principal {
+            grid-column-start: 1;
+            grid-column-end: 1;       
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header class="container">
+        <h1 id="l5" style="color:black; text-align: center;">Portfólio Pessoal</h1>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="#l1">Sobre mim</a></li>
+            <li><a href="#l2">Formação Educacional</a></li>
+            <li><a href="#l3">Portfólio</a></li>
+            <li><a href="#l4">Formulário</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="meninacomputador2">
+            <center><img src="imagens/meninacomputador2.png" height="150 px"></center>
+            
+        </aside>
+        <section class="principal">
+            <h1 id="l1">Sobre mim:</h1>
+            <!--Breve abordagem para nao ficar cansativo-->
+            <p>Me chamo Natália, tenho 29 anos e sou natural da Bahia. No meu tempo livre, divido meus hobbies 
+                em 4 seções: adoro assistir aos mais variados esportes, gosto também de jogar jogos, mas por 
+                detrás de uma tela, amo ler, principalmente romances, e ouvir músicas para relaxar.
+            </p>
+            <p>Talvez muito crítica, perfeccionista e organizada, porém me considero também bastante criativa, tenho sempre 
+                muito animação em aprender e conhecer coisas novas, ainda mais no que se diz respeito as culturas de outros
+                países, línguas/idiomas e suas literaturas.
+            </p>
+            <p style="margin-bottom: 5rem;"></p><!--Margens para melhorar visualmente a leitura e tambem a estetica do site-->
+                               
+            <h1 id="l2">Formação Educacional:</h1>
+            <p>Em 2022 concluí, pelo Centro Universitário Internacional UNINTER, minha primeira graduação no 
+                curso de Bacharelado em Letras. Atualmente, estou cursando o primeiro ano de Engenharia de 
+                Software também pela UNINTER, gosto bastante dessas duas áreas, mesmo sendo distintas. 
+                No presente, também estou no processo de formação do idioma inglês, o qual pretendo concluir 
+                em 2024, ajudando assim no meu desenvolvimento e crescimento acadêmico e profissional.
+            </p>
+            <p style="margin-bottom: 5rem;"></p>           
+
+            <h1 id="l3">Portfólio:</h1>
+            <p>Para facilitar o acesso a este Portfólio Pessoal, nessa seção, ficará disponibilizado um outro
+                link que irá te direcionar para o site GitHub, contendo o mesmo portfólio ou trabalho.
+            </p>
+            <p>Para acessar este segundo link, clique na imagem abaixo:</p>
+            <a href="https://portfoliopessoal.github.io/nataliaalmeida/">
+                <img src="imagens/GitHublogo.png" height="100">
+                </a>
+
+            <p style="margin-bottom: 5rem;"></p>
+
+
+            <h1 id="l4">Formulário:</h1>
+              <form action="" method="">
+                  <table>
+                      <tr>
+                          <th><label for="nome">Nome:</label></th>
+                          <td><input type="text" name="nome"
+id="nome"></td>
+                      </tr>
+                      <tr>
+                      <th><label for="email">E-mail:</label></th>
+                      <td><input type="email" name="email"
+id="email"></td>
+                      </tr>
+                      <tr>
+                          <th><label for="msg">Digite sua Mensagem</label></th>
+                          <td><textarea name="msg" rows="5" cols="40">Digite sua Mensagem:</textarea></td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td><button>Enviar</button></td>
+                      </tr>
+                   </table>
+              </form>
+        </section>
+    </div>
+  <p style="margin-bottom: 2rem;"></p>       
+      <a href="#l5">Topo</a>
+    <footer class="container">
+        <h1>2023</h1>
+    </footer>
+      
+              
+
+
+</body>
+</html>
